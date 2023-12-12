@@ -2,7 +2,7 @@
   "$schema": "https://github.com/Azure/data-api-builder/releases/download/v0.9.7/dab.draft.schema.json",
   "data-source": {
     "database-type": "postgresql",
-    "connection-string": "@env('Server')",
+    "connection-string": "Server=testingdata.postgres.database.azure.com;Database=intern;Port=5432;User Id=azure_db_testing;Password=Noch8539;",
     "options": {}
   },
   "runtime": {
@@ -44,7 +44,7 @@
       "permissions": [
         {
           "actions": ["*"],
-          "role": "anonymous"
+          "role": "authenticated"
         }
       ]
     }
